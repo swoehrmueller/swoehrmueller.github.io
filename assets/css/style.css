@@ -592,13 +592,12 @@ html, body {
     font-size: 20px;
 }
 
-/* Added by Stefan */
-.section-research a.coauthors {
-    /* text-align: left; */
+/* Added by Stefan - did not work */
+/* .section-research a.coauthors {
     margin: 0px;
     font-weight: 500;
     font-size: 16px;
-}
+} */
 
 .section-research p {
     /* text-align: left; */
