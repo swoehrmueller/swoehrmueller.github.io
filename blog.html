@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Title of the Website in Tab -->
+    <title>Blog - Stefan Wöhrmüller</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png">
+
+    <!-- Stylesheets -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header id="masthead" class="site-header">
+        <nav id="primary-navigation" class="site-navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle collapsed" data-target="#portfolio-perfect-collapse" aria-expanded="false" >
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="main-menu" id="portfolio-perfect-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="page-scroll"><a href="index.html">Home</a></li>
+                        <li class="page-scroll"><a href="assets/files/CV_SW.pdf" target="_blank" download>CV</a></li>
+                        <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+                        <li class="nav-item"><a class="nav-link" href="codes.html">Codes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main" class="site-main">
+        <section id="blog" class="site-section section-blog">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                        <h1>Blog</h1>
+                        <!-- <p>Latest posts and research insights.</p> -->
+                    </div>
+                </div>
+
+                <div class="row" id="blog-grid">
+                    <!-- Blog posts will be inserted here by JS -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Note -->
+    <p class="top-two" align="center">The views expressed in this webpage are my own, and should not be interpreted as reflecting the views of De Nederlandsche Bank.</p>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="assets/js/skrollr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-progressbar/0.9.0/bootstrap-progressbar.min.js"></script>
+    <script src="assets/js/jquery.countTo.min.js"></script>
+
+    <!-- Blog Data -->
+    <script src="assets/js/blogData.js"></script>
+
+    <!-- Render blog posts (with picture) -->
+    <!-- <script>
+        const blogGrid = document.getElementById('blog-grid');
+        blogPosts.forEach(post => {
+            const card = document.createElement('div');
+            card.classList.add('col-md-4', 'col-sm-6', 'col-xs-12');
+            card.innerHTML = `
+                <article class="blog-card">
+                    <a href="${post.link}">
+                        <img src="${post.image}" class="img-responsive" alt="${post.title}">
+                    </a>
+                    <div class="blog-content">
+                        <h3><a href="${post.link}">${post.title}</a></h3>
+                        <p>${post.description}</p>
+                        <a href="${post.link}" class="read-more">Read More →</a>
+                    </div>
+                </article>
+            `;
+            blogGrid.appendChild(card);
+        });
+    </script> -->
+
+    <!-- Render blog posts -->
+    <script>
+        const blogGrid = document.getElementById('blog-grid');
+        blogPosts.forEach(post => {
+            const card = document.createElement('div');
+            card.classList.add('col-md-4', 'col-sm-6', 'col-xs-12');
+            card.innerHTML = `
+                <article class="blog-card">
+                    <div class="blog-content">
+                        <h4><a href="${post.link}">${post.title}</a></h4>
+                        <p>${post.description}</p>
+                        <a href="${post.link}" class="read-more">Read More →</a>
+                    </div>
+                </article>
+            `;
+            blogGrid.appendChild(card);
+        });
+    </script>
+
+</body>
+</html>

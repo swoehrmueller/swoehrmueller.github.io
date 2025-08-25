@@ -1,0 +1,20 @@
+[
+  {
+    "title": "First Blog Post",
+    "description": "A short summary of my first blog post...",
+    "image": "assets/img/blog1.jpg",
+    "link": "post1.html"
+  },
+  {
+    "title": "Second Blog Post",
+    "description": "Some interesting insights in my research...",
+    "image": "assets/img/blog2.jpg",
+    "link": "post2.html"
+  },
+  {
+    "title": "Third Blog Post",
+    "description": "A deeper look into one of my projects...",
+    "image": "assets/img/blog3.jpg",
+    "link": "post3.html"
+  }
+]
