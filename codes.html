@@ -1,91 +1,61 @@
-<!-- Source: https://www.free-css.com/free-css-templates/page256/portfolio-perfect -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <!-- Basic Page Needs
-    ================================================== -->
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <!-- Title of the Website in Tab -->
-    <title>Stefan Wöhrmüller</title>
-
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="keywords" content="">
-
-    <!-- Mobile Specific Metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-
-    <!-- Fonts -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"> -->
-
-    <!-- Favicon
-    ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codes – Stefan Wöhrmüller</title>
+    <meta name="description" content="Numerical codes for heterogeneous-agent models in Julia by Stefan Wöhrmüller.">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png">
-
-    <!-- Stylesheets
-    ================================================== -->
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..600,30..100;1,9..144,400..500,30..100&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/responsive.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
 <body>
 
-    <header id="masthead" class="site-header" data-anchor-target=".hero" data-top="background: rgba(255,255,255,0); padding: 30px 0; box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0);" data-top-bottom="background: rgba(255,255,255,1); padding: 10px 0; box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.2);">
-        <nav id="primary-navigation" class="site-navigation">
-            <div class="container">
-                <div class="navbar-header page-scroll">
-
-                    <button type="button" class="navbar-toggle collapsed" data-target="#portfolio-perfect-collapse" aria-expanded="false" >
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    
-                </div>
-
-                <div class="main-menu" id="portfolio-perfect-collapse">
-
-                    <ul class="nav navbar-nav navbar-right">
-
-                        <li class="page-scroll"><a href="index.html">Home</a></li>
-                        <li class="page-scroll"><a href="assets/files/CV_SW.pdf" target="_blank" "download">CV</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="research.html">Research</a> </li>
-                        <!-- <li class="nav-item"> <a class="nav-link" href="teaching.html">Teaching</a> </li> -->
-                        <li class="nav-item"> <a class="nav-link" href="codes.html">Codes</a> </li>
-                        <!-- <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li> -->
-                        <!-- <li class="nav-item"> <a class="nav-link" href="contact.html">Contact</a> </li> -->
-                        
-                    </ul>
-
-                </div>
-
-            </div>
-        </nav>
-    </header>
-
-
-    <section id="about" class="site-section section-about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-0">
-                    <p align="justify">I collected some example codes on my <a href="https://github.com/swoehrmueller/NumericalMethods/">Github page</a> that solve heterogeneous agent models. These codes, written in Julia, solve an Aiyagari model in steady state and with transitional dynamics as well as an one-asset HANK model. I hope they are of use to people who want to get familiar with these kind of numerical techniques. </p>  
-                </div>
-            </div>
+    <nav class="site-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-name">Stefan Wöhrmüller</a>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="assets/files/CV_SW.pdf" target="_blank">CV</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="codes.html" class="active">Codes</a></li>
+            </ul>
         </div>
-    </section><!-- /.secton-about -->
+    </nav>
+
+    <main class="page-content">
+        <h1 class="page-title">Codes</h1>
+
+        <div class="codes-content">
+            <p>
+                I have collected example codes on my
+                <a href="https://github.com/swoehrmueller/NumericalMethods/" target="_blank" rel="noopener noreferrer">GitHub page</a>
+                that solve heterogeneous-agent models. These codes, written in Julia, solve an Aiyagari model
+                in steady state and with transitional dynamics, as well as a one-asset HANK model.
+                I hope they are useful for people who want to get familiar with these numerical techniques.
+            </p>
+        </div>
+    </main>
+
+    <p class="disclaimer">The views expressed on this webpage are my own and should not be interpreted as reflecting the views of De Nederlandsche Bank.</p>
+
+    <p class="colophon">Designed with <a href="https://claude.com/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a> &mdash; &ldquo;I want to have a website in the design equivalent of a scandinavian coffee shop.&rdquo;</p>
+
+    <script>
+        const toggle = document.querySelector('.nav-toggle');
+        const links = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => {
+            const open = links.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', open);
+        });
+    </script>
+
+</body>
+</html>
